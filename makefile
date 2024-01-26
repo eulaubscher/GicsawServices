@@ -8,6 +8,7 @@ all: testmember.sqlrpgle
 #employees.sqlrpgle: emps.dspf		dependency
 
 %.sqlrpgle:
+#system -s "CHGATR OBJ('/home/PLZEL/GicsawServices/qrpglesrc/$*.sqlrpgle') ATR(*CCSID) VALUE(1252)"
 	system -s "CHGATR OBJ('./qrpglesrc/$*.sqlrpgle') ATR(*CCSID) VALUE(1252)"
 	liblist -a $(LIBLIST);\
 	system "CRTSQLRPGI OBJ($(BIN_LIB)/$*) SRCSTMF('./qrpglesrc/$*.sqlrpgle') COMMIT(*NONE) DBGVIEW(*SOURCE) OPTION(*EVENTF)"

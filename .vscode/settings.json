@@ -1,0 +1,16 @@
+{
+    //"makefile.loggingLevel": "Debug",
+    //"makefile.configurations": [
+        //{
+            //"name": "Default1",
+            //"makeArgs": [
+              //  "WORKSPACE=${workspaceFolder}/.."
+            //],
+        //}
+   // ],
+    //"makefile.launchConfigurations": [
+        //{
+        //    "MIMode": ""
+        //}
+   // ]
+}
